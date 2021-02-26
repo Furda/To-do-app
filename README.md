@@ -1,30 +1,39 @@
-# Full-Stack ToDo Web App with Python
-This is a project for a Clever Programmer's course.
+# To-do Full Stack App
 
-## Contents
+* Users can add new tasks
+* Users can delete existing tasks
+* Users can mark tasks as completed
 
-1. [Initial Setup Instructions](#initial-setup-instructions)
-1. [Running Server](#running-server)
+## Working app
 
+https://to-do-list-fl-app.herokuapp.com/
 
 ## Initial Setup Instructions
 
 ### Setup Python Virtual Environment
+
 ```buildoutcfg
 python3 -m venv venv
 . venv/bin/activate
 pip3 install -r requirements.txt
 ```
 ## Running Server
-### Cheatsheet
+
 ```buildoutcfg
-sqlite3 todo.db <---- creates db and runs sqlite3 terminal
-.tables <---- saves db in sqlite3 terminal
-.exit <------ closes sqlite3 terminal
-python / python3 <---- run python terminal
-from app  import  db <----- import db from our flask app inside python terminal
-db.create_all() <---- creates tables
-exit() <----- exit from terminal
-python app.py <---- run our app
+./mange.py migrate
+./mange.py runserver
 ```
-### Go and check `http://127.0.0.1:5000`
+### Go and check `http://127.0.0.1:8000/`
+
+## Built With
+
+* [Python](https://www.python.org) - Language
+* [Django](https://www.djangoproject.com) - Web framework
+* [pip](https://pypi.org/project/pip/) - Dependency Management
+
+## Acknowledgments
+
+* This API was built following the Profitable Programmer course 
+* You can visit the course page here: https://course.profitableprogrammer.co/pp-2019
+
+
